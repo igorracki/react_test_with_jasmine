@@ -1,0 +1,39 @@
+{
+  "name": "indecision-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "server": "live-server public/",
+    "dev-server": "webpack-dev-server",
+    "build-webpack": "webpack --watch",
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
+    "test": "jasmine"
+  },
+  "dependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.25.0",
+    "babel-loader": "7.1.1",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "live-server": "^1.2.0",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-modal": "2.2.2",
+    "react-test-renderer": "^16.4.1",
+    "validator": "^10.4.0",
+    "webpack": "3.1.0",
+    "webpack-dev-server": "2.5.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "ignore-styles": "^5.0.1",
+    "jasmine": "^3.1.0",
+    "jasmine-enzyme": "^6.0.2",
+    "jasmine-local-storage": "^1.1.0",
+    "jsdom": "^11.11.0"
+  }
+}
